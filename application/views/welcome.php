@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <?php
 
-$nota = 100;
+$nota = 89;
 $asistencias = 90;//en porcentajes
 
 echo "La nota inicial es: $nota <br>";
