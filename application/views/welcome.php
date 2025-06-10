@@ -19,20 +19,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <?php
 
-$nota = 89;
-$asistencias = 89;//en porcentajes
-
-echo "La nota inicial es: $nota <br>";
-echo "El porcentaje de asistencia es de: $asistencias %<br>";
-
-echo $asistencias<=90 ? "se aplica promocion".$nota+=5 : "no se aplica promocion<br>";
-
-if($nota > 100){
-	$nota=100;
+$numero = 7;
+$factorial = 1;
+for ($i = 1; $i <= $numero; $i++) {
+	$factorial *= $i;
 }
-echo "<br>la nota final es $nota";
 
+$option = 0;
+$option = intval(trim(fgets(STDIN)));
 
-
+switch ($option) {
+	case 1:
+		echo "Opción 1 seleccionada";
+		break;
+	case 2:
+		echo "Opción 2 seleccionada";
+		break;
+	default:
+		echo "Opción no válida";
+		break;
+}
+echo "El factorial de $numero es $factorial";
 
 ?>
